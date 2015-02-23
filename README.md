@@ -7,10 +7,13 @@ tc-angular-chartjs
 
 ### Add Chart.js to your angular applications
 
-tc-angular-chartjs provides you with directives for all chartjs chart types.
+tc-angular-chartjs provides you with directives for all chartjs chart types
+
+this extended version supports [stacked bar charts] (https://github.com/Regaddi/Chart.StackedBar.js)
 
 - Line Charts
 - Bar Charts
+- Stacked Bar Charts
 - Radar Charts
 - Polar Area Charts
 - Pie Charts
@@ -21,12 +24,13 @@ You can see all the [Chart.js Documentation](http://www.chartjs.org/docs/) on th
 Installation
 ============
 
-Grab the latest version of `Chart.js` and `tc-angular-chartjs`.
+Grab the latest version of `Chart.js`, 'Chart.StackedBar.js' and `tc-angular-chartjs`.
 
-Load `Chart.js` and `tc-angular-chartjs` as you would with normal scripts.
+Load `Chart.js`, 'Chart.StackedBar.js' and `tc-angular-chartjs` as you would with normal scripts.
 
 ```html
 <script type="text/javascript" src="js/Chart.js"></script>
+<script type="text/javascript" src="js/Chart.StackedBar.js"></script>
 <script type="text/javascript" src="js/angular.js"></script>
 <script type="text/javascript" src="js/tc-angular-chartjs.js"></script>
 ```
@@ -45,6 +49,7 @@ There are 6 different directives.
 - tc-chartjs
 - tc-chartjs-line
 - tc-chartjs-bar
+- tc-chartjs-stackedbar
 - tc-chartjs-radar
 - tc-chartjs-polararea
 - tc-chartjs-pie
@@ -91,6 +96,7 @@ Available Types:
 
 - line
 - bar
+- stackedbar
 - radar
 - polararea
 - pie

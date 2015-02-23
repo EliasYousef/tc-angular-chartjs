@@ -10,6 +10,7 @@
     .directive( 'tcChartjs', TcChartjs )
     .directive( 'tcChartjsLine', TcChartjsLine )
     .directive( 'tcChartjsBar', TcChartjsBar )
+    .directive( 'tcChartjsStackedbar', TcChartjsStackedbar )
     .directive( 'tcChartjsRadar', TcChartjsRadar )
     .directive( 'tcChartjsPolararea', TcChartjsPolararea )
     .directive( 'tcChartjsPie', TcChartjsPie )
@@ -27,6 +28,10 @@
 
   function TcChartjsBar( TcChartjsFactory ) {
     return new TcChartjsFactory( 'bar' );
+  }
+
+  function TcChartjsStackedbar( TcChartjsFactory ) {
+    return new TcChartjsFactory( 'stackedbar' );
   }
 
   function TcChartjsRadar( TcChartjsFactory ) {
@@ -142,6 +147,8 @@
             return 'Pie';
           case 'doughnut':
             return 'Doughnut';
+          case 'stackedbar':
+            return 'StackedBar';
           default:
             return type;
         }
